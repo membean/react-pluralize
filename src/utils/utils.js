@@ -1,10 +1,10 @@
 export const pluralize = ({ singular, plural, count, showCount, zero }) => {
-  if (count === 0 && zero) return zero
+  if (count === 0 && zero) return zero;
 
-  let output = singular
+  let output = singular;
   if (count !== 1) {
-    output = plural || `${singular}s`
+    output = plural || `${singular}s`;
   }
 
-  return showCount ? `${count} ${output}` : output
-}
+  return showCount ? `${count} ${output}` : output;
+};

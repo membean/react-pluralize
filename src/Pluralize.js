@@ -7,14 +7,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { pluralize } from "./utils";
 
-const Plural = ({
-  className = null,
-  count = 1,
-  showCount = true,
-  style = {},
-  zero = null,
-  ...props
-}) => (
+const Plural = ({ className, style, ...props }) => (
   <span className={className} style={style}>
     {pluralize(props)}
   </span>
