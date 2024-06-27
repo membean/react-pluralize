@@ -23,4 +23,12 @@ Plural.propTypes = {
   zero: PropTypes.string,
 };
 
+Plural.defaultProps = {
+  count: 1,
+  showCount: true,
+  className: null,
+  style: {},
+  zero: null,
+};
+
 export default Plural;
